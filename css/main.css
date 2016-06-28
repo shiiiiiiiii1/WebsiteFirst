@@ -7,17 +7,21 @@ html, body, p, ul, li, a {
 header {
   padding: 20px 10px 20px 0;
   font-size: 1.2em;
-  text-align: right; }
+  text-align: right;
+  background-color: #819da7;
+  color: #fff; }
   header .header-nav {
     margin-right: 20px; }
+    header .header-nav:link {
+      color: #fff; }
     header .header-nav:visited {
-      color: #333; }
+      color: #fff; }
 
 footer {
   text-align: center;
   margin-bottom: 10px;
   padding-top: 10px;
-  border-top: 1px solid #333; }
+  border-top: 1px solid #819da7; }
   @media (max-width: 640px) {
     footer {
       font-size: 0.8em; } }
@@ -28,9 +32,9 @@ footer {
   background: url(../img/main.jpg) no-repeat 50%;
   background-size: cover; }
   .main-content .main-topic {
-    margin-left: 55%;
-    padding-top: 330px;
-    font-size: 2.8em;
+    margin-left: 50%;
+    padding-top: 370px;
+    font-size: 2.5em;
     font-family: YuGothic, sans-serif;
     letter-spacing: 0.2em;
     color: #fff; }
@@ -56,13 +60,14 @@ footer {
   width: 24vw;
   height: 24vw;
   float: left;
-  background-color: #999;
+  position: relative;
   margin: 0.2vw 0 0.2vw 0.2vw; }
   .sub-content-child:last-child {
     margin-right: 0.2vw; }
   .sub-content-child:hover {
-    background-color: #aaa;
     cursor: pointer; }
+    .sub-content-child:hover .sub-content-text {
+      background-color: rgba(0, 0, 0, 0.6); }
   @media (max-width: 640px) {
     .sub-content-child {
       display: block;
@@ -70,20 +75,31 @@ footer {
       width: 100%;
       height: 100px;
       margin: 5px auto; } }
+  .sub-content-child .sub-content-text {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 5px 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5em; }
+    @media (max-width: 769px) {
+      .sub-content-child .sub-content-text {
+        font-size: 1em; } }
 
 .section-link {
   margin: 50px 0;
   padding: 30px 0;
   text-align: center;
-  background-color: #999; }
+  background-color: #d9e2e5; }
   .section-link .link-icon {
     font-size: 3em;
     margin-right: 50px;
-    color: #555; }
+    color: #819da7; }
     .section-link .link-icon:hover {
-      color: #222; }
+      color: #4d5f65; }
     .section-link .link-icon:visited {
-      color: #555; }
+      color: #819da7; }
   @media (max-width: 640px) {
     .section-link .link-icon {
       font-size: 1.5em;
@@ -100,12 +116,25 @@ footer {
 
 #introduction {
   width: 100%;
-  height: 800px;
-  background: url(../img/main.jpg) no-repeat 50%;
-  background-size: cover; }
+  height: 800px; }
   @media (max-width: 769px) {
     #introduction {
       height: 300px; } }
+
+.introduction-web {
+  background: url(../img/introduction-web.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #fff; }
+
+.introduction-product {
+  background: url(../img/introduction-product.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #fff; }
+
+.introduction-technology {
+  background: url(../img/introduction-technology.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #fff; }
 
 .float-clear {
   overflow: hidden; }
@@ -114,7 +143,7 @@ footer {
   overflow: hidden;
   width: 90%;
   margin: 50px auto;
-  border-top: 1px solid #aaa;
+  border-top: 2px solid #819da7;
   padding-top: 50px; }
   .web-main-topic .main-topic-photo {
     width: 46%;
@@ -141,9 +170,7 @@ footer {
     width: 100%;
     height: 100%; }
   .web-main-topic .main-topic-introduction {
-    width: 46%;
-    height: 500px;
-    background-color: #ddd; }
+    width: 46%; }
     .web-main-topic .main-topic-introduction h2 {
       padding: 10px 30px 0 30px; }
     .web-main-topic .main-topic-introduction .main-topic-introduction-text {
@@ -169,22 +196,31 @@ footer {
 .main-topic-btn {
   width: 40%;
   padding: 15px 0;
-  background-color: #eee;
+  background-color: #819da7;
   border-radius: 5px;
   text-align: center;
   margin-left: 50%;
   margin-top: 30px;
   cursor: pointer;
-  display: block; }
+  display: block;
+  color: #fff; }
+  .main-topic-btn:link {
+    color: #fff; }
+  .main-topic-btn:visited {
+    color: #fff; }
   .main-topic-btn:hover {
-    background-color: #fff; }
+    background-color: #d9e2e5;
+    color: #819da7; }
 
 .link-btn {
   display: block;
   margin-left: 6%;
-  float: left; }
+  float: left;
+  color: #fff; }
+  .link-btn:link {
+    color: #fff; }
   .link-btn:visited {
-    color: #333; }
+    color: #fff; }
 
 @media (max-width: 769px) {
   .main-topic-left .main-topic-photo-left, .main-topic-left .main-topic-photo-right, .main-topic-left .main-topic-introduction-left, .main-topic-left .main-topic-introduction-right, .main-topic-right .main-topic-photo-left, .main-topic-right .main-topic-photo-right, .main-topic-right .main-topic-introduction-left, .main-topic-right .main-topic-introduction-right {
@@ -196,8 +232,11 @@ footer {
   .main-topic-left .main-topic-photo, .main-topic-left .main-topic-video, .main-topic-right .main-topic-photo, .main-topic-right .main-topic-video {
     height: 200px; }
   .main-topic-left .main-topic-introduction, .main-topic-right .main-topic-introduction {
-    height: 350px;
     font-size: 0.8em; }
+
+  .main-topic-btn {
+    width: 80%;
+    margin: 10px auto 0; }
 
   .link-btn {
     float: none;

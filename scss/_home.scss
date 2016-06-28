@@ -6,9 +6,9 @@
   background: url(../img/main.jpg) no-repeat 50%;
   background-size: cover;
   .main-topic {
-    margin-left: 55%;
-    padding-top: 330px;
-    font-size: 2.8em;
+    margin-left: 50%;
+    padding-top: 370px;
+    font-size: 2.5em;
     font-family : YuGothic, sans-serif;
     letter-spacing: 0.2em;
     color: #fff;
@@ -39,14 +39,16 @@
   width: 24vw;
   height: 24vw;
   float: left;
-  background-color: #999;
+  position: relative;
   margin: 0.2vw 0 0.2vw 0.2vw;
   &:last-child {
     margin-right: 0.2vw;
   }
   &:hover {
-    background-color: #aaa;
     cursor: pointer;
+    .sub-content-text {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
   }
   @media (max-width: $break-short) {
     display: block;
@@ -55,22 +57,34 @@
     height: 100px;
     margin: 5px auto;
   }
+  .sub-content-text {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 5px 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    @media (max-width: $break-middle) {
+      font-size: 1em;
+    }
+  }
 }
 
 .section-link {
   margin: 50px 0;
   padding: 30px 0;
   text-align: center;
-  background-color: #999;
+  background-color: #d9e2e5;
   .link-icon {
     font-size: 3em;
     margin-right: 50px;
-    color: #555;
+    color: #819da7;
     &:hover {
-      color: #222;
+      color: #4d5f65;
     }
     &:visited {
-      color: #555;
+      color: #819da7;
     }
   }
   @media (max-width: $break-short) {
