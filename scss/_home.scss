@@ -1,3 +1,5 @@
+@import "variable.scss";
+
 .main-content {
   width: 100%;
   height: 800px;
@@ -5,21 +7,37 @@
   background-size: cover;
   .main-topic {
     margin-left: 55%;
-    padding-top: 20%;
+    padding-top: 330px;
     font-size: 2.8em;
     font-family : YuGothic, sans-serif;
     letter-spacing: 0.2em;
     color: #fff;
   }
+  @media (max-width: $break-middle) {
+    height: 500px;
+    .main-topic {
+      padding-top: 200px;
+      font-size: 2em;
+    }
+  }
+  @media (max-width: $break-short) {
+    height: 300px;
+    .main-topic {
+      padding-top: 120px;
+      font-size: 1em;
+    }
+  }
 }
 
 .sub-content {
   overflow: hidden;
+  width: 72.8vw;
+  margin: 0 auto;
 }
 
 .sub-content-child {
-  width: 24.75vw;
-  height: 24.75vw;
+  width: 24vw;
+  height: 24vw;
   float: left;
   background-color: #999;
   margin: 0.2vw 0 0.2vw 0.2vw;
@@ -29,6 +47,13 @@
   &:hover {
     background-color: #aaa;
     cursor: pointer;
+  }
+  @media (max-width: $break-short) {
+    display: block;
+    float: none;
+    width: 100%;
+    height: 100px;
+    margin: 5px auto;
   }
 }
 
@@ -46,6 +71,16 @@
     }
     &:visited {
       color: #555;
+    }
+  }
+  @media (max-width: $break-short) {
+    .link-icon {
+      font-size: 1.5em;
+      margin-right: 0;
+      margin-left: 30px;
+    }
+    .link-icon-margin-none {
+      margin-left: 0;
     }
   }
 }

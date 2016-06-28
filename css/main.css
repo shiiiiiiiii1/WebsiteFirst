@@ -18,6 +18,9 @@ footer {
   margin-bottom: 10px;
   padding-top: 10px;
   border-top: 1px solid #333; }
+  @media (max-width: 640px) {
+    footer {
+      font-size: 0.8em; } }
 
 .main-content {
   width: 100%;
@@ -26,18 +29,32 @@ footer {
   background-size: cover; }
   .main-content .main-topic {
     margin-left: 55%;
-    padding-top: 20%;
+    padding-top: 330px;
     font-size: 2.8em;
     font-family: YuGothic, sans-serif;
     letter-spacing: 0.2em;
     color: #fff; }
+  @media (max-width: 769px) {
+    .main-content {
+      height: 500px; }
+      .main-content .main-topic {
+        padding-top: 200px;
+        font-size: 2em; } }
+  @media (max-width: 640px) {
+    .main-content {
+      height: 300px; }
+      .main-content .main-topic {
+        padding-top: 120px;
+        font-size: 1em; } }
 
 .sub-content {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 72.8vw;
+  margin: 0 auto; }
 
 .sub-content-child {
-  width: 24.75vw;
-  height: 24.75vw;
+  width: 24vw;
+  height: 24vw;
   float: left;
   background-color: #999;
   margin: 0.2vw 0 0.2vw 0.2vw; }
@@ -46,6 +63,13 @@ footer {
   .sub-content-child:hover {
     background-color: #aaa;
     cursor: pointer; }
+  @media (max-width: 640px) {
+    .sub-content-child {
+      display: block;
+      float: none;
+      width: 100%;
+      height: 100px;
+      margin: 5px auto; } }
 
 .section-link {
   margin: 50px 0;
@@ -60,6 +84,13 @@ footer {
       color: #222; }
     .section-link .link-icon:visited {
       color: #555; }
+  @media (max-width: 640px) {
+    .section-link .link-icon {
+      font-size: 1.5em;
+      margin-right: 0;
+      margin-left: 30px; }
+    .section-link .link-icon-margin-none {
+      margin-left: 0; } }
 
 .introduction-area {
   text-align: center; }
@@ -69,6 +100,12 @@ footer {
   height: 800px;
   background: url(../img/main.jpg) no-repeat 50%;
   background-size: cover; }
+  @media (max-width: 769px) {
+    #introduction {
+      height: 300px; } }
+
+.float-clear {
+  overflow: hidden; }
 
 .web-main-topic {
   overflow: hidden;
@@ -125,6 +162,30 @@ footer {
   .main-topic-btn:hover {
     background-color: #fff; }
 
+.link-btn {
+  display: block;
+  margin-left: 6%;
+  float: left; }
+  .link-btn:visited {
+    color: #333; }
+
+@media (max-width: 769px) {
+  .main-topic-left .main-topic-photo-left, .main-topic-left .main-topic-photo-right, .main-topic-left .main-topic-introduction-left, .main-topic-left .main-topic-introduction-right, .main-topic-right .main-topic-photo-left, .main-topic-right .main-topic-photo-right, .main-topic-right .main-topic-introduction-left, .main-topic-right .main-topic-introduction-right {
+    float: none; }
+  .main-topic-left .main-topic-photo, .main-topic-left .main-topic-introduction, .main-topic-left .main-topic-video, .main-topic-right .main-topic-photo, .main-topic-right .main-topic-introduction, .main-topic-right .main-topic-video {
+    width: 80%;
+    margin: 20px auto; } }
+@media (max-width: 640px) {
+  .main-topic-left .main-topic-photo, .main-topic-left .main-topic-video, .main-topic-right .main-topic-photo, .main-topic-right .main-topic-video {
+    height: 200px; }
+  .main-topic-left .main-topic-introduction, .main-topic-right .main-topic-introduction {
+    height: 350px;
+    font-size: 0.8em; }
+
+  .link-btn {
+    float: none;
+    width: 80%;
+    margin: 10px auto 0; } }
 .cover-bg {
   width: 100%;
   height: 100vh;
@@ -137,5 +198,8 @@ footer {
     width: 50%;
     margin: 30px auto;
     display: block; }
+    @media (max-width: 769px) {
+      .cover-bg .popup-img {
+        width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */

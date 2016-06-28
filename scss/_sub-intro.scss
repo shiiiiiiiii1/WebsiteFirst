@@ -1,3 +1,5 @@
+@import "variable.scss";
+
 .introduction-area {
   text-align: center;
 }
@@ -7,6 +9,13 @@
   height: 800px;
   background: url(../img/main.jpg) no-repeat 50%;
   background-size: cover;
+  @media (max-width: $break-middle) {
+    height: 300px;
+  }
+}
+
+.float-clear {
+  overflow: hidden;
 }
 
 .web-main-topic {
@@ -74,5 +83,43 @@
   cursor: pointer;
   &:hover {
     background-color: #fff;
+  }
+}
+
+.link-btn {
+  display: block;
+  margin-left: 6%;
+  float: left;
+  &:visited {
+    color: #333;
+  }
+}
+
+@media (max-width: $break-middle) {
+  .main-topic-left, .main-topic-right {
+    .main-topic-photo-left, .main-topic-photo-right, .main-topic-introduction-left, .main-topic-introduction-right {
+      float: none;
+    }
+    .main-topic-photo, .main-topic-introduction, .main-topic-video {
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
+}
+
+@media (max-width: $break-short) {
+  .main-topic-left, .main-topic-right {
+    .main-topic-photo, .main-topic-video {
+      height: 200px;
+    }
+    .main-topic-introduction {
+      height: 350px;
+      font-size: 0.8em;
+    }
+  }
+  .link-btn {
+    float: none;
+    width: 80%;
+    margin: 10px auto 0;
   }
 }
