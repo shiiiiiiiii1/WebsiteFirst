@@ -7,6 +7,7 @@ $(document).ready(function(){
   });
   $('.cover-bg').bind('click', function() {
     $('.cover-bg').fadeOut('slow/400/fast', function() {
+      $('.popup-img').attr('src', '');
     });
   });
 });
