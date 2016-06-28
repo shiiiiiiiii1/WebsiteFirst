@@ -33,11 +33,13 @@ footer {
     color: #fff; }
 
 .sub-content {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 72.8vw;
+  margin: 0 auto; }
 
 .sub-content-child {
-  width: 24.75vw;
-  height: 24.75vw;
+  width: 24vw;
+  height: 24vw;
   float: left;
   background-color: #999;
   margin: 0.2vw 0 0.2vw 0.2vw; }
@@ -69,6 +71,9 @@ footer {
   height: 800px;
   background: url(../img/main.jpg) no-repeat 50%;
   background-size: cover; }
+
+.float-clear {
+  overflow: hidden; }
 
 .web-main-topic {
   overflow: hidden;
@@ -124,6 +129,13 @@ footer {
   cursor: pointer; }
   .main-topic-btn:hover {
     background-color: #fff; }
+
+.link-btn {
+  display: block;
+  margin-left: 6%;
+  float: left; }
+  .link-btn:visited {
+    color: #333; }
 
 .cover-bg {
   width: 100%;

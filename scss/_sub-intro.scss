@@ -9,6 +9,10 @@
   background-size: cover;
 }
 
+.float-clear {
+  overflow: hidden;
+}
+
 .web-main-topic {
   overflow: hidden;
   width: 90%;
@@ -74,5 +78,14 @@
   cursor: pointer;
   &:hover {
     background-color: #fff;
+  }
+}
+
+.link-btn {
+  display: block;
+  margin-left: 6%;
+  float: left;
+  &:visited {
+    color: #333;
   }
 }
