@@ -118,9 +118,22 @@ footer {
   padding-top: 50px; }
   .web-main-topic .main-topic-photo {
     width: 46%;
-    height: 500px;
-    background: url(../img/main.jpg) no-repeat 50%;
+    height: 500px; }
+  .web-main-topic .main-topic-photo-web {
+    background: url(../img/web-image.jpg) no-repeat 50%;
+    background-size: contain; }
+  .web-main-topic .main-topic-photo-draw {
+    background: url(../img/draw-image.jpg) no-repeat 50%;
+    background-size: contain; }
+  .web-main-topic .main-topic-photo-unit {
+    background: url(../img/unit-image.jpg) no-repeat 50%;
     background-size: cover; }
+  .web-main-topic .main-topic-photo-product {
+    background: url(../img/product-image.jpg) no-repeat 50%;
+    background-size: cover; }
+  .web-main-topic .main-topic-photo-3D {
+    background: url(../img/3D-image.jpg) no-repeat 50%;
+    background-size: contain; }
   .web-main-topic .main-topic-video {
     width: 46%;
     height: 500px; }
@@ -200,7 +213,7 @@ footer {
   display: none; }
   .cover-bg .popup-img {
     width: 50%;
-    margin: 30px auto;
+    margin: 50px auto 100px;
     display: block; }
     @media (max-width: 769px) {
       .cover-bg .popup-img {

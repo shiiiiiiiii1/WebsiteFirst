@@ -31,8 +31,26 @@
   .main-topic-photo {
     width: 46%;
     height: 500px;
-    background: url(../img/main.jpg) no-repeat 50%;
+  }
+  .main-topic-photo-web {
+    background: url(../img/web-image.jpg) no-repeat 50%;
+    background-size: contain;
+  }
+  .main-topic-photo-draw {
+    background: url(../img/draw-image.jpg) no-repeat 50%;
+    background-size: contain;
+  }
+  .main-topic-photo-unit {
+    background: url(../img/unit-image.jpg) no-repeat 50%;
     background-size: cover;
+  }
+  .main-topic-photo-product {
+    background: url(../img/product-image.jpg) no-repeat 50%;
+    background-size: cover;
+  }
+  .main-topic-photo-3D {
+    background: url(../img/3D-image.jpg) no-repeat 50%;
+    background-size: contain;
   }
   .main-topic-video {
     width: 46%;
