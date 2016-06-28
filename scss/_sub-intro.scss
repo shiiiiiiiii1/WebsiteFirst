@@ -1,3 +1,5 @@
+@import "variable.scss";
+
 .introduction-area {
   text-align: center;
 }
@@ -87,5 +89,17 @@
   float: left;
   &:visited {
     color: #333;
+  }
+}
+
+@media (max-width: $break-middle) {
+  .main-topic-left, .main-topic-right {
+    .main-topic-photo-left, .main-topic-photo-right, .main-topic-introduction-left, .main-topic-introduction-right {
+      float: none;
+    }
+    .main-topic-photo, .main-topic-introduction, .main-topic-video {
+      width: 80%;
+      margin: 20px auto;
+    }
   }
 }

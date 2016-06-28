@@ -26,11 +26,17 @@ footer {
   background-size: cover; }
   .main-content .main-topic {
     margin-left: 55%;
-    padding-top: 20%;
+    padding-top: 330px;
     font-size: 2.8em;
     font-family: YuGothic, sans-serif;
     letter-spacing: 0.2em;
     color: #fff; }
+  @media (max-width: 769px) {
+    .main-content {
+      height: 500px; }
+      .main-content .main-topic {
+        padding-top: 200px;
+        font-size: 2em; } }
 
 .sub-content {
   overflow: hidden;
@@ -137,6 +143,12 @@ footer {
   .link-btn:visited {
     color: #333; }
 
+@media (max-width: 769px) {
+  .main-topic-left .main-topic-photo-left, .main-topic-left .main-topic-photo-right, .main-topic-left .main-topic-introduction-left, .main-topic-left .main-topic-introduction-right, .main-topic-right .main-topic-photo-left, .main-topic-right .main-topic-photo-right, .main-topic-right .main-topic-introduction-left, .main-topic-right .main-topic-introduction-right {
+    float: none; }
+  .main-topic-left .main-topic-photo, .main-topic-left .main-topic-introduction, .main-topic-left .main-topic-video, .main-topic-right .main-topic-photo, .main-topic-right .main-topic-introduction, .main-topic-right .main-topic-video {
+    width: 80%;
+    margin: 20px auto; } }
 .cover-bg {
   width: 100%;
   height: 100vh;
@@ -149,5 +161,8 @@ footer {
     width: 50%;
     margin: 30px auto;
     display: block; }
+    @media (max-width: 769px) {
+      .cover-bg .popup-img {
+        width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */
