@@ -81,6 +81,12 @@ footer {
     height: 500px;
     background: url(../img/main.jpg) no-repeat 50%;
     background-size: cover; }
+  .web-main-topic .main-topic-video {
+    width: 46%;
+    height: 500px; }
+  .web-main-topic .youtube-video {
+    width: 100%;
+    height: 100%; }
   .web-main-topic .main-topic-introduction {
     width: 46%;
     height: 500px;
@@ -114,6 +120,7 @@ footer {
   border-radius: 5px;
   text-align: center;
   margin-left: 50%;
+  margin-top: 20px;
   cursor: pointer; }
   .main-topic-btn:hover {
     background-color: #fff; }
@@ -122,11 +129,12 @@ footer {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
   position: fixed;
-  top: 0; }
+  top: 0;
+  overflow: scroll;
+  display: none; }
   .cover-bg .popup-img {
-    width: 80%;
+    width: 50%;
     margin: 30px auto;
     display: block; }
 
