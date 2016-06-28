@@ -94,6 +94,9 @@ footer {
 
 .introduction-area {
   text-align: center; }
+  .introduction-area .introduction-text-area {
+    font-size: 1.2em;
+    line-height: 1.8em; }
 
 #introduction {
   width: 100%;
@@ -157,8 +160,9 @@ footer {
   border-radius: 5px;
   text-align: center;
   margin-left: 50%;
-  margin-top: 20px;
-  cursor: pointer; }
+  margin-top: 30px;
+  cursor: pointer;
+  display: block; }
   .main-topic-btn:hover {
     background-color: #fff; }
 

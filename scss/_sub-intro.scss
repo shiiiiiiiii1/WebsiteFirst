@@ -2,6 +2,10 @@
 
 .introduction-area {
   text-align: center;
+  .introduction-text-area {
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
 }
 
 #introduction {
@@ -79,8 +83,9 @@
   border-radius: 5px;
   text-align: center;
   margin-left: 50%;
-  margin-top: 20px;
+  margin-top: 30px;
   cursor: pointer;
+  display: block;
   &:hover {
     background-color: #fff;
   }
