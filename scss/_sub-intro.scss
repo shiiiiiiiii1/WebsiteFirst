@@ -2,16 +2,36 @@
 
 .introduction-area {
   text-align: center;
+  .introduction-text-area {
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
 }
 
 #introduction {
   width: 100%;
   height: 800px;
-  background: url(../img/main.jpg) no-repeat 50%;
-  background-size: cover;
   @media (max-width: $break-middle) {
     height: 300px;
   }
+}
+
+.introduction-web {
+  background: url(../img/introduction-web.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #fff;
+}
+
+.introduction-product {
+  background: url(../img/introduction-product.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #fff;
+}
+
+.introduction-technology {
+  background: url(../img/introduction-technology.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #fff;
 }
 
 .float-clear {
@@ -22,13 +42,31 @@
   overflow: hidden;
   width: 90%;
   margin: 50px auto;
-  border-top: 1px solid #aaa;
+  border-top: 2px solid #819da7;
   padding-top: 50px;
   .main-topic-photo {
     width: 46%;
     height: 500px;
-    background: url(../img/main.jpg) no-repeat 50%;
+  }
+  .main-topic-photo-web {
+    background: url(../img/web-image.jpg) no-repeat 50%;
+    background-size: contain;
+  }
+  .main-topic-photo-draw {
+    background: url(../img/draw-image.jpg) no-repeat 50%;
+    background-size: contain;
+  }
+  .main-topic-photo-unit {
+    background: url(../img/unit-image.jpg) no-repeat 50%;
     background-size: cover;
+  }
+  .main-topic-photo-product {
+    background: url(../img/product-image.jpg) no-repeat 50%;
+    background-size: cover;
+  }
+  .main-topic-photo-3D {
+    background: url(../img/3D-image.jpg) no-repeat 50%;
+    background-size: contain;
   }
   .main-topic-video {
     width: 46%;
@@ -40,8 +78,6 @@
   }
   .main-topic-introduction {
     width: 46%;
-    height: 500px;
-    background-color: #ddd;
     h2 {
       padding: 10px 30px 0 30px;
     }
@@ -75,14 +111,23 @@
 .main-topic-btn {
   width: 40%;
   padding: 15px 0;
-  background-color: #eee;
+  background-color: #819da7;
   border-radius: 5px;
   text-align: center;
   margin-left: 50%;
-  margin-top: 20px;
+  margin-top: 30px;
   cursor: pointer;
+  display: block;
+  color: #fff;
+  &:link {
+    color: #fff;
+  }
+  &:visited {
+    color: #fff;
+  }
   &:hover {
-    background-color: #fff;
+    background-color: #d9e2e5;
+    color: #819da7;
   }
 }
 
@@ -90,8 +135,12 @@
   display: block;
   margin-left: 6%;
   float: left;
+  color: #fff;
+  &:link {
+    color: #fff;
+  }
   &:visited {
-    color: #333;
+    color: #fff;
   }
 }
 
@@ -113,9 +162,12 @@
       height: 200px;
     }
     .main-topic-introduction {
-      height: 350px;
       font-size: 0.8em;
     }
+  }
+  .main-topic-btn {
+    width: 80%;
+    margin: 10px auto 0;
   }
   .link-btn {
     float: none;
