@@ -9,6 +9,9 @@
   height: 800px;
   background: url(../img/main.jpg) no-repeat 50%;
   background-size: cover;
+  @media (max-width: $break-middle) {
+    height: 300px;
+  }
 }
 
 .float-clear {
@@ -101,5 +104,22 @@
       width: 80%;
       margin: 20px auto;
     }
+  }
+}
+
+@media (max-width: $break-short) {
+  .main-topic-left, .main-topic-right {
+    .main-topic-photo, .main-topic-video {
+      height: 200px;
+    }
+    .main-topic-introduction {
+      height: 350px;
+      font-size: 0.8em;
+    }
+  }
+  .link-btn {
+    float: none;
+    width: 80%;
+    margin: 10px auto 0;
   }
 }

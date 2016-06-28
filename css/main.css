@@ -18,6 +18,9 @@ footer {
   margin-bottom: 10px;
   padding-top: 10px;
   border-top: 1px solid #333; }
+  @media (max-width: 640px) {
+    footer {
+      font-size: 0.8em; } }
 
 .main-content {
   width: 100%;
@@ -37,6 +40,12 @@ footer {
       .main-content .main-topic {
         padding-top: 200px;
         font-size: 2em; } }
+  @media (max-width: 640px) {
+    .main-content {
+      height: 300px; }
+      .main-content .main-topic {
+        padding-top: 120px;
+        font-size: 1em; } }
 
 .sub-content {
   overflow: hidden;
@@ -54,6 +63,13 @@ footer {
   .sub-content-child:hover {
     background-color: #aaa;
     cursor: pointer; }
+  @media (max-width: 640px) {
+    .sub-content-child {
+      display: block;
+      float: none;
+      width: 100%;
+      height: 100px;
+      margin: 5px auto; } }
 
 .section-link {
   margin: 50px 0;
@@ -68,6 +84,13 @@ footer {
       color: #222; }
     .section-link .link-icon:visited {
       color: #555; }
+  @media (max-width: 640px) {
+    .section-link .link-icon {
+      font-size: 1.5em;
+      margin-right: 0;
+      margin-left: 30px; }
+    .section-link .link-icon-margin-none {
+      margin-left: 0; } }
 
 .introduction-area {
   text-align: center; }
@@ -77,6 +100,9 @@ footer {
   height: 800px;
   background: url(../img/main.jpg) no-repeat 50%;
   background-size: cover; }
+  @media (max-width: 769px) {
+    #introduction {
+      height: 300px; } }
 
 .float-clear {
   overflow: hidden; }
@@ -149,6 +175,17 @@ footer {
   .main-topic-left .main-topic-photo, .main-topic-left .main-topic-introduction, .main-topic-left .main-topic-video, .main-topic-right .main-topic-photo, .main-topic-right .main-topic-introduction, .main-topic-right .main-topic-video {
     width: 80%;
     margin: 20px auto; } }
+@media (max-width: 640px) {
+  .main-topic-left .main-topic-photo, .main-topic-left .main-topic-video, .main-topic-right .main-topic-photo, .main-topic-right .main-topic-video {
+    height: 200px; }
+  .main-topic-left .main-topic-introduction, .main-topic-right .main-topic-introduction {
+    height: 350px;
+    font-size: 0.8em; }
+
+  .link-btn {
+    float: none;
+    width: 80%;
+    margin: 10px auto 0; } }
 .cover-bg {
   width: 100%;
   height: 100vh;
