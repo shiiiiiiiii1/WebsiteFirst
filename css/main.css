@@ -172,9 +172,7 @@ footer {
   .web-main-topic .main-topic-introduction {
     width: 46%; }
     .web-main-topic .main-topic-introduction h2 {
-      padding: 10px 30px 0 30px; }
-    .web-main-topic .main-topic-introduction .main-topic-introduction-text {
-      padding: 0 30px; }
+      padding: 10px 0 0; }
 
 .main-topic-photo-left {
   float: left;
